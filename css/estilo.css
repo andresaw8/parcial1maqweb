@@ -1,0 +1,108 @@
+/*PROPIEDADES COMUNES*/
+header, main, section, article, footer, aside { display: block; }
+body { margin: 0 !important; }
+a { text-decoration: none; }
+
+h1, h2 { font-family: 'cream_cakeregular'; }
+h3, h4, h5, h6, p, a, form, input, textarea, select, option { font-family: 'Roboto', sans-serif; }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+
+
+/*HEADER*/
+header { display: none; }
+header article {  }
+header article figure {  }
+header article figure img {  }
+
+
+
+/*MAIN*/
+main { width: 100%; height: 100%; margin: 0 auto; float: none; position: relative; }
+
+/*Página Inicio*/
+section#perfil { width: 100%; height: 100%; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 10; }
+
+section#perfil article#foto-perfil { width: 50%; height: 100%; margin: 0; float: left; position: relative; background: url('../img/fondo-imagen.jpg') no-repeat center center; background-size: cover; }
+
+section#perfil article#foto-perfil figure {
+    width: 100%; 
+    height: 175px;
+    margin: 0;
+    float: none;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 35%, rgba(0,0,0,0.8) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 35%,rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 35%,rgba(0,0,0,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
+}
+section#perfil article#foto-perfil figure h1 { text-align: center; font-weight: 500; color: #fff; font-size: 2.313em; line-height: 1em; letter-spacing: 0.025em; font-style: normal; padding: 50px 0 0 0; }
+section#perfil article#foto-perfil figure h3 { color: #fff; font-weight: 100; text-align: center; font-size: 1em; line-height: 1em; padding: 10px 40px 0 40px; letter-spacing: 0.1em; }
+
+
+
+section#perfil article#info-perfil { width: 50%; height: 100%; margin: 0; float: right; position: relative; background: #fff; }
+section#perfil article#info-perfil div#box-info-perfil { width: 450px; height: 400px; margin: 15vh 0 0 60px; float: none; position: relative; }
+section#perfil article#info-perfil div#box-info-perfil h2 { text-align: left; font-weight: 500; color: #1159e2; font-size: 2.75em; line-height: 1em; letter-spacing: 0.025em; font-style: normal; padding: 0; }
+section#perfil article#info-perfil div#box-info-perfil h3 { font-weight: 500; text-align: left; font-size: 1em; line-height: 1em; padding: 10px 0 25px 0; letter-spacing: 0.1em; color: #222; }
+
+section#perfil article#info-perfil div#box-info-perfil a {  }
+section#perfil article#info-perfil div#box-info-perfil a:hover {  }
+
+section#perfil article#info-perfil div#box-info-perfil p { text-align: justify; font-size: 1em; line-height: 1.5em; font-weight: 400; letter-spacing: 0.05em; padding: 0 0 25px; }
+
+section#perfil article#info-perfil div#box-info-perfil div#info-experiencia {  }
+section#perfil article#info-perfil div#box-info-perfil div#info-experiencia div.txt-experiencia {  }
+section#perfil article#info-perfil div#box-info-perfil div#info-experiencia div.txt-experiencia h6 {  }
+section#perfil article#info-perfil div#box-info-perfil div#info-experiencia div.txt-experiencia h5 {  }
+
+section#perfil article#info-perfil div#box-info-perfil nav#menu-redes {  }
+section#perfil article#info-perfil div#box-info-perfil nav#menu-redes a {  }
+section#perfil article#info-perfil div#box-info-perfil nav#menu-redes a i {  }
+section#perfil article#info-perfil div#box-info-perfil nav#menu-redes a:hover {  }
+section#perfil article#info-perfil div#box-info-perfil nav#menu-redes a:hover i {  }
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES PARA RESPONSIVE DESIGN*/
+@media only screen and (max-width: 1199px){
+    main { height: auto; }
+    
+    section#perfil { height: auto; margin: 0 auto; float: none; position: relative; }
+    section#perfil article#foto-perfil { width: 100%; height: 250px; margin: 0 auto; float: none; }
+    section#perfil article#foto-perfil figure { display: block; }
+    
+    section#perfil article#info-perfil { width: 100%; height: auto; margin: 0 auto; float: none; }
+    section#perfil article#info-perfil div#box-info-perfil { width: 80%; height: auto; }
+    
+    section#perfil article#info-perfil div#box-info-perfil h2,
+    section#perfil article#info-perfil div#box-info-perfil h3 { display: none; }
+}
+
+@media only screen and (max-width: 1099px){  }
+
+@media only screen and (max-width: 999px){  }
+
+@media only screen and (max-width: 899px){  }
+
+@media only screen and (max-width: 799px){ }
+    
+@media only screen and (max-width: 699px){  }
+    
+@media only screen and (max-width: 599px){  }
+    
+@media only screen and (max-width: 499px){  }
+
+@media only screen and (max-width: 399px){  }
+
+
